@@ -36,10 +36,10 @@ export class Status {
         return this._timestamp;
     }
  
-    // public get formattedDate(): string {
-    //     let date: Date = new Date(this.timestamp);
-    //     return (moment(date)).format('DD-MMM-YYYY HH:mm:ss');
-    // }
+    public get formattedDate(): string {
+        let date: Date = new Date(this.timestamp);
+        return (moment(date)).format('DD-MMM-YYYY HH:mm:ss');
+    }
 
     public set timestamp(value: number) {
         this._timestamp = value;

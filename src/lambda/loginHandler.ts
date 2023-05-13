@@ -1,9 +1,8 @@
-import { LoginResponse } from "../model/net/response/loginResponse"
-import { FakeData } from "../util/FakeData";
+import { LoginRequest } from "../model/net/request/LoginRequest";
+import { login } from "../model/service/UserService"
 
-export const handler = async(event: any) => {
+
+export const handler = async(event: LoginRequest) => {
     // TODO implement
-    let fakeData = FakeData.instance;
-    let loginResponse = new LoginResponse(fakeData.firstUser, null);
-    return loginResponse;
+    return login(event);
 };

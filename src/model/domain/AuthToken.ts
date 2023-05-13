@@ -5,11 +5,11 @@ export class AuthToken {
   private _token: string;
   private _datetime: string | null;
 
-  // public static Generate(): AuthToken {
-  //   let token: string = uuid().toString();
-  //   let date: string = moment(Date.now()).format("DD-MMM-YYYY HH:mm:ss");
-  //   return new AuthToken(token, date);
-  // }
+  public static Generate(): AuthToken {
+    let token: string = uuid().toString();
+    let date: string = moment(Date.now()).format("DD-MMM-YYYY HH:mm:ss");
+    return new AuthToken(token, date);
+  }
 
   public constructor(token: string, dateTime: string | null) {
     this._token = token;

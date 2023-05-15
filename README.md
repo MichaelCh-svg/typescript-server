@@ -3,9 +3,9 @@ To set up this project with aws, after cloning the project:
 1. Run npm i from within the project.
 2. Edit the tsc-lambda.sh file.
     - Make sure that the lambda function names match those of yours.
-3. Run the tsc-lambda.sh file. In command prompt, you simply type 'tsc-lambda.sh'
-    - Running an sh file requires git. If you run this from the command prompt, visual studio may have you select a setting that automatically opens an external git terminal for this command.
-    It might be simpler to run this in the git terminal.
+3. Run the tsc-lambda.sh file. 
+- In a git terminal, run 'sh tsc-lambda.sh'.
+- If you don't have 7-zip installed, make sure to install that since it gets called in the script.
 4. Add a lambda layer to the lambdas for dependencies not included in the compiled files.
         - These dependences may include moment, uuid, aws-sdk...
     - Create a lambda layer in aws.

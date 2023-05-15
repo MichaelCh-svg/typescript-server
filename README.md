@@ -5,6 +5,7 @@ To set up this project with aws, after cloning the project:
     - Make sure that the lambda function names match those of yours.
 3. Run the tsc-lambda.sh file. In command prompt, you simply type 'tsc-lambda.sh'
     - Running an sh file requires git. If you run this from the command prompt, visual studio may have you select a setting that automatically opens an external git terminal for this command.
+    It might be simpler to run this in the git terminal.
 4. Add a lambda layer to the lambdas for dependencies not included in the compiled files.
         - These dependences may include moment, uuid, aws-sdk...
     - Create a lambda layer in aws.

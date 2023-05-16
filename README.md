@@ -14,3 +14,12 @@ To set up this project with aws, after cloning the project:
         - Upload the typescript-javascript-encode.zip file to the lambda layer.
     - Go to the lambda and add the layer as a custom layer.
     - If the zip file doesn't work properly, or you need to create your own dependencies for the lambda layer, follow the instructions at [lambda layers](lambdaLayers.md)
+
+
+    For local testing, run a .ts file using ts-node '[file].ts'.
+    
+    To install ts-node, run the following commands:
+
+    Install ts-node with the 
+    npm install -D ts-node
+    npm install -D typescript
